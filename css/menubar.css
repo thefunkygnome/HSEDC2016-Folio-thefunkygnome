@@ -18,3 +18,17 @@
   background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1180px) {
+
+  .menubar {
+    height: 44px;
+    padding: 0;
+  }
+
+  .logo {
+    width: 59px;
+    height: 17px;
+  }
+
+}
