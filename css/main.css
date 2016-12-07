@@ -9,7 +9,6 @@ body * {
   transition: all .3s ease;
 }
 
-
 .landingWraper {
   position: relative;
   display: flex;
@@ -58,7 +57,7 @@ body * {
 .section.Right,
 .section.Center {
   color: white;
-  /*background-color: rgb(135, 150, 150);*/
+  background-color: rgb(135, 150, 150);
 }
 
 .section.Right section {
@@ -86,7 +85,7 @@ body * {
   width: 30px;
   height: 4px;
   margin: 61px 0 0 -1px;
-  background-color: rgb(119, 255, 225);
+  background-color: rgb(80, 227, 194);
 }
 
 .pic#img1 {
@@ -304,15 +303,16 @@ body * {
   }
 
   .btn.large {
-    margin: 42px 0 0 304px;
+    margin: 42px 0 0 474px;
     width: 214px;
     font-size: 12px;
     height: 36px;
+    line-height: 37px;
   }
 
   .btn.small {
     font-size: 13px;
-    margin: -3px 0 0 287px;
+    margin: -2px 0 0 456px;
   }
 
   .social-likes_single-w {
@@ -418,6 +418,7 @@ body * {
     width: 214px;
     font-size: 12px;
     height: 36px;
+    line-height: 37px;
   }
 
   .btn.small {
@@ -526,6 +527,7 @@ body * {
     width: 214px;
     font-size: 12px;
     height: 36px;
+    line-height: 37px;
   }
 
   .btn.small {
@@ -544,10 +546,8 @@ body * {
     background-image: url(../img/mockups/768.png);
     background-position: top center;
     background-repeat: no-repeat;
+  }
 }
-
-
-
 
 
 
