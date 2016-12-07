@@ -12,9 +12,9 @@
   font-size: 17px;
   color: black;
   text-decoration: none;
-  background-color: rgb(102, 255, 226);
+  background-color: rgb(80, 227, 194);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-  margin: 60px 0 0 563px;
+  margin: 60px 0 0 559px;
 }
 
 .small {
@@ -24,5 +24,5 @@
   font-size: 17px;
   color: white;
   font-family: 'PT Sans', sans-serif;
-  margin: 4px 0 0 597px;
+  margin: 4px 0 0 588px;
 }
