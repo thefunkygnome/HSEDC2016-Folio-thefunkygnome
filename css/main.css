@@ -1,3 +1,9 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: #FAFAFA;
 }
@@ -54,13 +60,14 @@ body * {
   margin-top: 25px;
 }
 
+.section.Left {
+  background-color: white;
+}
+
 .section.Left section {
   margin: 192px 0 0 159px;
 }
 
-.section.Left {
-  background-color: white;
-}
 
 .section.Right,
 .section.Center {
@@ -155,7 +162,7 @@ body * {
   margin: 58px 0 0 -13px;
 }
 .social-likes_single-w {
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 @media screen and (max-width: 1180px) {
