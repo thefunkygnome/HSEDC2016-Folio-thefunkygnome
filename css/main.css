@@ -47,11 +47,11 @@ body * {
   font-family: 'PT Sans', sans-serif;
   font-size: 21px;
   line-height: 36px;
-  margin-top: 28px;
+  margin-top: 25px;
 }
 
 .section.Left section {
-  margin: 192px 0 0 161px;
+  margin: 192px 0 0 159px;
 }
 
 .section.Right,
@@ -81,6 +81,11 @@ body * {
   font-size: 16px;
 }
 
+.pic {
+  display: block;
+  background-size: cover;
+}
+
 #pattern {
   width: 30px;
   height: 4px;
@@ -96,48 +101,55 @@ body * {
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
 }
 
-.pic:not(.pic#img3) {
+.pics.pic {
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
 }
-
-.pic {
-  position: absolute;
-  background-size: cover;
+.pics {
+  display: flex;
+  justify-content: space-between;;
+  align-items: flex-start;
+  width: 486px;
+  height: 100%;
+  margin: -313px 0 0 159px;
 }
 
 .pic#img2_1 {
-  margin: -310px 0 0 506px;
   width: 140px;
   height: 478px;
   background-image: url(../img/content/pic2_1.png);
 }
 
 .pic#img2_2 {
-  margin: -313px 0 0 332px;
   width: 141px;
   height: 397px;
   background-image: url(../img/content/pic2_2.png);
 }
 
 .pic#img2_3 {
-  margin: -313px 0 0 159px;
   width: 141px;
   height: 318px;
   background-image: url(../img/content/pic2_3.png);
 }
 
 .pic#img3{
-  margin: -157px 0 0 639px;
+  margin: -163px 0 0 639px;
   width: 762px;
   height: 404px;
   background-image: url(../img/content/pic3.png);
 }
 
+.btns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 94px;
+  margin: 58px 0 0 -13px;
+}
 .social-likes_single-w {
   margin-top: 8px;
 }
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 1180px) {
   body.mockup {
     background-image: url(../img/mockups/1180_landscape.png);
@@ -185,29 +197,12 @@ body * {
     margin: -358px 0 0 620px;
   }
 
-  .pic#img2_1 {
-    margin: -363px 0 0 376px;
-  }
-
-  .pic#img2_2 {
-    margin: -477px 0 0 202px;
-  }
-
-  .pic#img2_3 {
-    margin: -398px 0 0 29px;
+  .pics {
+    margin: -363px 0 0 30px;
   }
 
   .pic#img3 {
     margin: -212px 0 0 508px;
-  }
-
-  .btn.large {
-    margin: 58px 0 0 427px;
-  }
-
-  .btn.small {
-    font-size: 13px;
-    margin: -2px 0 0 286px;
   }
 
 }
@@ -263,7 +258,7 @@ body * {
     margin: 18px 0 0 -3px;
   }
   .section.Center footer p {
-    margin: 67px 0 0 2px;
+    margin: 130px 0 0 2px;
     font-size: 13px;
   }
 
@@ -279,22 +274,24 @@ body * {
     margin: -258px 0 0 611px;
   }
 
+  .pics {
+    width: 347px;
+    margin: -260px 0 0 190px;
+  }
+
   .pic#img2_1 {
     width: 99px;
     height: 339px;
-    margin: -260px 0 0 438px;
   }
 
   .pic#img2_2 {
     width: 99px;
     height: 283px;
-    margin: -260px 0 0 316px;
   }
 
   .pic#img2_3 {
     width: 100px;
     height: 227px;
-    margin: -260px 0 0 191px;
   }
 
   .pic#img3 {
@@ -303,13 +300,19 @@ body * {
     margin: -154px 0 0 532px;
   }
 
+  .btns {
+    margin: 42px 0 0 -10px;
+    height: 10px;
+  }
   .btn.large {
-    margin: 42px 0 0 431px;
+    width: 214px;
+    font-size: 12px;
+    height: 36px;
+    line-height: 37px;
   }
 
   .btn.small {
     font-size: 13px;
-    margin: -2px 0 0 456px;
   }
 
 }
@@ -346,35 +349,19 @@ body * {
     margin: 18px 0 0 -3px;
   }
   .section.Center footer p {
-    margin: 67px 0 0 2px;
+    margin: 130px 0 0 2px;
   }
 
   .pic#img1 {
     margin: -258px 0 0 440px;
   }
 
-  .pic#img2_1 {
-    margin: -260px 0 0 268px;
-  }
-
-  .pic#img2_2 {
-    margin: -260px 0 0 146px;
-  }
-
-  .pic#img2_3 {
+  .pics {
     margin: -260px 0 0 21px;
   }
 
   .pic#img3 {
-    margin: -153px 0 0 361px;
-  }
-
-  .btn.large {
-    margin: 42px 0 0 304px;
-  }
-
-  .btn.small {
-    margin: -3px 0 0 287px;
+    margin: -155px 0 0 361px;
   }
 
 }
@@ -411,7 +398,7 @@ body * {
     margin: 18px 0 0 -3px;
   }
   .section.Center footer p {
-    margin: 422px 0 0 0px;
+    margin: 486px 0 0 0px;
   }
 
   .pic#img1 {
@@ -420,41 +407,33 @@ body * {
     margin: 58px 0 0 148px;
   }
 
+  .pics {
+    width: 488px;
+    margin: 100px 0 0 173px;
+  }
   .pic#img2_1 {
     width: 140px;
     height: 478px;
-    margin: 59px 0 0 520px;
   }
 
   .pic#img2_2 {
     width: 141px;
     height: 397px;
-    margin: 58px 0 0 346px;
   }
 
   .pic#img2_3 {
     width: 141px;
     height: 318px;
-    margin: 58px 0 0 173px;
   }
 
   .pic#img3 {
     width: 762px;
     height: 404px;
-    margin: 108px 0 0 157px;
+    margin: 149px 0 0 157px;
   }
 
-  .btn.large {
-    margin: 92px 0 0 303px;
-    width: 214px;
-    font-size: 12px;
-    height: 36px;
-    line-height: 37px;
-  }
-
-  .btn.small {
-    font-size: 13px;
-    margin: -2px 0 0 286px;
+  .btns {
+    margin-top: 92px;
   }
 
 }
