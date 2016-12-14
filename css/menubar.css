@@ -1,6 +1,12 @@
 .menubar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 50px;
   padding: 5px;
@@ -13,22 +19,20 @@
 
 .logo {
   display: block;
-  width: 84px;
+  width: 83px;
   height: 24px;
   background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1180px) {
-
+@media screen and (max-width: 1179px) {
   .menubar {
-    height: 44px;
-    padding: 2px;
+    height: 45px;
+    padding: 0;
   }
 
   .logo {
-    width: 59px;
-    height: 17px;
+    width: 61px;
+    height: 18px;
   }
-
 }
